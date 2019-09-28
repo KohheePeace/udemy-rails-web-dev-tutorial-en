@@ -1,3 +1,41 @@
 site_name: My Docs
 theme:
   name: 'material'
+nav:
+    - 0 - Introduction: index.md
+    - 1 - Install Editor: editor-install.md
+    - HTML: 
+        - Intro: html-guide/01-html-intro.md
+        - Understand HTML: html-guide/02-understand-basic-html.md
+        - Play with HTML: html-guide/03-play-with-html.md
+    - CSS:
+        - Intro: css-guide/01-intro.md
+    - Bootstrap:
+        - Intro: bootstrap-guide/intro.md
+    - Javascript:
+        - Intro: javascript-guide/intro.md
+    - jQuery:
+        - Intro: jquery-guide/intro.md
+    - Recap Front End: recap-frontend.md
+    - Coffee Break 1: coffee-break1.md
+    - Git:
+        - Intro: git-guide/intro.md
+    - Rails:
+        - Intro: rails-guide/intro.md
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
