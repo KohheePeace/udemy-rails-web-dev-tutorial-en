@@ -10,6 +10,7 @@ nav:
         - Play with HTML: html-guide/03-play-with-html.md
     - CSS:
         - Intro: css-guide/01-intro.md
+        - Class and ID: css-guide/02-class-and-id.md
     - Bootstrap:
         - Intro: bootstrap-guide/intro.md
     - Javascript:
@@ -39,3 +40,4 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - codehilite

@@ -9,30 +9,36 @@ https://www.w3schools.com/tags/default.asp
 
 You will find that there are too many HTML tag.
 
-
-## The important things is ...
 ==**You don't need to memorize it!**==
 
 ## Let's add some new HTML tag
+![html-demo-play](../img/html-guide/html-ul-demo.gif)
+
+
+Copy and paste the code
+
 `test.html`
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+  <meta charset="UTF-8">
+  <title>Title of the document</title>
 </head>
 
 <body>
-<h1>Here is a title.</h1>
-<h2>Here is a subtitle.</h2>
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
+  <h1>Here is a title.</h1>
+  <h2>Here is a subtitle.</h2>
+
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
 </body>
 
 </html>
 ```
-![html-demo-play](../img/html-ul-demo.gif)
+
+## Check the output
+![add-ul-tag-html](../img/html-guide/add-ul-tag-html.png)
