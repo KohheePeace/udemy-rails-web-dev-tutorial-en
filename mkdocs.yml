@@ -11,12 +11,17 @@ nav:
     - CSS:
         - Intro: css-guide/01-intro.md
         - Class and ID: css-guide/02-class-and-id.md
-    - Bootstrap:
-        - Intro: bootstrap-guide/intro.md
+    - Bootstrap CSS:
+        - Intro: bootstrap-css-guide/01-intro.md
+        - Play with Bootstrap CSS: bootstrap-css-guide/02-play-with-bootstrap.md
     - Javascript:
         - Intro: javascript-guide/intro.md
     - jQuery:
         - Intro: jquery-guide/intro.md
+    - Bootstrap JS:
+        - Intro: bootstrap-js-guide/01-intro.md
+    - Combine all front end:
+        - Intro: combine-front-end-guide/intro.md
     - Recap Front End: recap-frontend.md
     - Coffee Break 1: coffee-break1.md
     - Git:

@@ -1,2 +1,0 @@
-# Bootstarp Introduction
-Bootstrapがcssの巨大な塊(ライブラリー)だということをわかるように説明する。

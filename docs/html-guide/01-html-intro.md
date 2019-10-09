@@ -1,29 +1,29 @@
 # Chapter 2 HTML Introduction
 
-## Summery of this chapter
-- Understand HTML
-- Make basic HTML file
+## Chapter Goals:
+- Understand what is HTML
+- Make a basic HTML file
 - Browse HTML file in a web browser
 
 ## What is HTML ?
-> Hypertext Markup Language (HTML) is the standard markup language for ___documents designed to be displayed in a ==web browser==___.
+> Hypertext Markup Language (HTML) is the standard markup language for ___==documents designed to be displayed in a web browser==___.
 https://en.wikipedia.org/wiki/HTML
 
 ## What is web browser?
-Web browser is somethings like below...
+Web browser is something like below...
 ![Web-browser-screenshot](https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowser.png)
 Image From https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowser.png
 
 
 ## Let's write basic HTML!
-We will use the example of below link. It is reliable than me :)
+We will use the example of below link. This is reliable than me :)
 https://www.w3schools.com/html/html5_intro.asp
 
 ![ss](../img/html-guide/w3-school-html.png)
 
 
 ## 
-`terminal`
+In `terminal`
 ```bash
 mkdir html-test # make directory
 cd html-test # change directory
@@ -31,9 +31,7 @@ touch test.html # make file
 ```
 
 
-`test.html`
-
-I added some **`indent`**.
+In `test.html` (NOTE: I added some **`indent`** to the example.)
 ```html
 <!DOCTYPE html>
 <html>

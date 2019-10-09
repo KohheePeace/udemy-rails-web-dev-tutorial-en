@@ -1,5 +1,10 @@
-# Class and ID
-In addition to HTML tag, you can use class and id as an css target.
+## Chapter Goals:
+- Learn how to use **class** and **id** for css styling target
+
+## Class and ID
+In addition to HTML tag like `<h1>`, you can use `class` and `id` as an css target.
+
+Let's edit `test.html` file like below.
 
 `test.html`
 ```html
