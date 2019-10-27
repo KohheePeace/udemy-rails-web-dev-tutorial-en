@@ -10,3 +10,6 @@ https://en.wikipedia.org/wiki/JQuery
 ![you-might-not-need-jquery](../img/jquery-guide/you-might-not-need-jquery.gif)
 http://youmightnotneedjquery.com/
 https://arp242.net/jquery.html
+
+!!! summery
+    jQuery is easy writing version of javascript.

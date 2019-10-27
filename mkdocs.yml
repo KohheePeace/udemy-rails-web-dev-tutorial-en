@@ -1,6 +1,9 @@
 site_name: My Docs
 theme:
   name: 'material'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
 nav:
     - 0 - Introduction: index.md
     - 1 - Install Editor: editor-install.md
@@ -10,18 +13,27 @@ nav:
         - Play with HTML: html-guide/03-play-with-html.md
     - CSS:
         - Intro: css-guide/01-intro.md
+        - there-are-3-writing-styles: css-guide/there-are-3-writing-styles.md
         - Class and ID: css-guide/02-class-and-id.md
+        - Google Dev Tools: css-guide/03-google-dev-tools.md
+        - Complex CSS: css-guide/04-complex-css.md
     - Bootstrap CSS:
         - Intro: bootstrap-css-guide/01-intro.md
         - Play with Bootstrap CSS: bootstrap-css-guide/02-play-with-bootstrap.md
+        - Bootstrap Component: bootstrap-css-guide/03-component.md
     - Javascript:
         - Intro: javascript-guide/intro.md
+        - play-with-javascript: javascript-guide/play-with-javascript.md
+        - 3-writing-styles: javascript-guide/3-writing-styles.md
     - jQuery:
         - Intro: jquery-guide/intro.md
+        - Repalce javascript: jquery-guide/play-with-jquery.md
     - Bootstrap JS:
         - Intro: bootstrap-js-guide/01-intro.md
     - Combine all front end:
         - Intro: combine-front-end-guide/intro.md
+        - Tutorial: combine-front-end-guide/tutorial.md
+        - jquery-back-to-top: combine-front-end-guide/jquery-back-to-top.md
     - Recap Front End: recap-frontend.md
     - Coffee Break 1: coffee-break1.md
     - Git:
@@ -46,3 +58,4 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - codehilite
+  - admonition
