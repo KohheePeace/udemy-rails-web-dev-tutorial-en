@@ -1,13 +1,14 @@
-# Understand basic HTML code
+# Understand basic HTML 
 
-## Chapter Goals:
-- Understand last chapter html code
+!!! abstract "Chapter Goals"
+    - Understand last chapter HTML code
+    - Acquire the habit of googling
 
 
-## Check the meaning of the html code.
-==**The most important thing is always google it!**==
+## Check the meaning of the HTML code of the last chapter.
+==The most important thing is always **googling it!**==
 
-This is the code we used in last chapter.
+This is the code we used in the last chapter.
 
 `test.html`
 ```html
@@ -39,6 +40,11 @@ I choose this link https://www.w3schools.com/tags/tag_doctype.asp
 
 > The <!DOCTYPE> declaration is not an HTML tag; ==**it is an instruction to the web browser about what version of HTML the page is written in.**==
 
+So, if you want to use HTML4 version...
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+```
+
 
 
 ### 2. `<head>`
@@ -58,8 +64,38 @@ Let's google **"meta charset=UTF-8"**
 
 > The HTML charset Attribute is used to specify the character encoding for the HTML document. 
 
+According to the below link, charset can be...
+
+```
+- UTF-8: It specify the character encoding for Unicode.
+- ISO-8859-1: It specify the character encoding for the Latin alphabet.
+```
+
 https://www.geeksforgeeks.org/html-meta-charset-attribute/
-https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8
+
+
+If you change the charset and add content like below...
+
+It does not display correctly.
+
+```html hl_lines="9"
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Title of the document</title>
+</head>
+
+<body>
+  Бзиа збаша (Bzia zbaşa), Фэсапщы, Ç'kemi, ሰላም, and even right-to-left writing such as this السلام عليكم
+</body>
+
+</html>
+```
+
+![meta-charset-check](../img/html-guide/meta-charset-check.png)  
+
+ref: https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8
 
 ### 4. `<title>`
 You can easily understand what is `<title>` tag.
@@ -68,13 +104,6 @@ You can easily understand what is `<title>` tag.
 ### 5. `<body>`
 ![What is body tag of html](../img/html-guide/what-is-body-tag-of-html.png)  
 
-> The HTML `<body>` tag defines the main content of the HTML document or the section of the HTML document that will be directly visible on your web page. 
+> The HTML `<body>` tag defines the main content of the HTML document or the section of the HTML document ==that will be directly visible on your web page.== 
 
 https://www.techonthenet.com/html/elements/body_tag.php
-
-
-## Summery
-1. ==**You don't memorize these things!**== Just copy and paste is enough!
-2. `<!DOCTYPE>` declaration is for telling web browser what version of HTML the page is written in.
-3. `<head>` tag is used to contain specific **information** about a web page.
-4. `<body>` tag is where **directly visible on web page**.

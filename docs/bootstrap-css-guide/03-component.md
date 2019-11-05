@@ -1,5 +1,5 @@
 !!! abstract "Chapter Goals"
-    - Get used to Bootstrap
+    - Learn the idea of Component
 
 In this chapter, we're going to try some Bootstrap component and layout.
 
@@ -250,6 +250,9 @@ https://getbootstrap.com/docs/4.3/layout/grid/
 ## Card
 https://getbootstrap.com/docs/4.3/components/card/
 
+![copy-card.gif](../img/bootstrap-css-guide/copy-card.gif)
+
+Copy and paste card html.
 ```html
 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
@@ -261,7 +264,7 @@ https://getbootstrap.com/docs/4.3/components/card/
 </div>
 ```
 
-Replace img src
+Then, replace img src
 
 ```html
 <img src="https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/05-thumbnail.jpg" class="card-img-top" alt="...">
@@ -373,5 +376,6 @@ Replace img src
 ![output-after-copy-card](../img/bootstrap-css-guide/output-after-copy-card.gif)
 
 
-!!! summery
-    hogehoge
+!!! info
+    - Component is a piece of a puzzle.
+    - You can combine each component and make website.

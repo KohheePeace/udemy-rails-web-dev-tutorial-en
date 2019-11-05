@@ -1,18 +1,23 @@
 !!! abstract "Chapter Goals"
-    - To Understand only using pure CSS is troublesome
+    - To understand only using pure CSS is troublesome
 
 In this chapter, we are going to make some part of real website.
-
-==**The purpose of this is understanding why you need Bootstrap.**==
-
-Okay let's start!
 
 ![complex-css-demo](../img/css-guide/complex-css-demo.png)
 
 Responsive
 ![complex-css-responsive](../img/css-guide/complex-css-responsive.gif)
 
+You don't need to understand the code.
+
+==**The purpose of this is understanding why we need Bootstrap.**==
+
+Okay let's start!
+
 `test2.html`
+
+Writing HTML manually...
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -61,6 +66,9 @@ Responsive
 
 
 `test2.css`
+
+Writing CSS manually...
+
 ```css
 /* Disable Browser default margin from body */
 body {
@@ -153,6 +161,6 @@ body {
 }
 ```
 
-## What you need to understand from `test2.css`
-1. You need to write a lot of CSS
-2. You need to get familiar with CSS
+!!! info "What you need to understand from `test2.css`"
+    1. You need to write a lot of CSS
+    2. You need to get familiar with CSS

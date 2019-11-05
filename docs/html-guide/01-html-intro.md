@@ -1,23 +1,30 @@
 # Chapter 2 HTML Introduction
 
-## Chapter Goals:
-- Understand what is HTML
-- Make a basic HTML file
-- Browse HTML file in a web browser
+!!! abstract "Chapter Goals"
+    - Understand what is HTML
+    - Make a basic HTML file
+    - Browse HTML file in a web browser
+
 
 ## What is HTML ?
+
+From wikipedia...
+
 > Hypertext Markup Language (HTML) is the standard markup language for ___==documents designed to be displayed in a web browser==___.
+
 https://en.wikipedia.org/wiki/HTML
 
 ## What is web browser?
 Web browser is something like below...
 ![Web-browser-screenshot](https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowser.png)
-Image From https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowser.png
+Image from: https://digitalesklassenzimmer.files.wordpress.com/2015/08/webbrowser.png
 
 
 ## Let's write basic HTML!
-We will use the example of below link. This is reliable than me :)
+We will use the example of below link. This is because it is reliable than me.
+
 https://www.w3schools.com/html/html5_intro.asp
+
 
 ![ss](../img/html-guide/w3-school-html.png)
 
@@ -58,8 +65,8 @@ open test.html
 ![Screenshot](../img/html-guide/first-html-example.png)
 
 ## Finish!
-We have achieved the definition of HTML.
+Do you notice that we have achieved the definition of HTML?
 
-=> To ==**Display documents in a web browser**==
+=> ==**Display documents in a web browser**==
 
-In the next chapter, we will understand the meaning of html code in this chapter!
+In the next chapter, we will be learning the meaning of html code in this chapter!

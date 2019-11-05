@@ -1,7 +1,10 @@
-# Javascript Intro
+!!! abstract "Chapter Goals"
+    - Understand what is javascript
+
+
+From wikipedia...
 
 > Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[9] ==JavaScript enables **interactive** web pages== and is an essential part of web applications. The vast majority of websites use it,[10] and major web browsers have a dedicated JavaScript engine to execute it.
-
 
 https://en.wikipedia.org/wiki/JavaScript
 
@@ -36,19 +39,26 @@ Let's start with Bootstrap starter template with comment out javascript script.
 
 ## Start from the official docs
 
+But it seems there is no official docs of javascript.
+
+According to the below stackoverflow docs, MDN docs are suggested.
+
 https://stackoverflow.com/questions/1606212/why-is-there-no-official-javascript-reference
 
 ![what-is-official-js-source](../img/javascript-guide/what-is-official-js-source.gif)
+
+And, I choose the below example as a first step from MDN docs.
 
 https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
 
 
 ![copy-mdn-onclick-demo-code](../img/javascript-guide/copy-mdn-onclick-demo-code.gif)
 
-`test4.html`
 You don't need to understand the meaning of this code now.
-This is just a example to understand the meaning of **interactiive**.
 
+This is just a example to understand the meaning of **interactive**.
+
+`test4.html`
 ```html hl_lines="16 22 23 24 25 26 27"
 <!doctype html>
 <html lang="en">
@@ -84,15 +94,15 @@ This is just a example to understand the meaning of **interactiive**.
 ![output-copy-mdn-onclick-demo-code](../img/javascript-guide/output-copy-mdn-onclick-demo-code.gif)
 
 ## Do you understand the meaning of **interactive** ?
-**interactive** means...
+**Interactive** means...
 
-1. you (user) click
-2. then something happened
+1. You (user) click
+2. Then something happens
 
 This is **interactive** right ?
 
-In the next chapter, we will try to understand this javascript code and write more javascript code.
+In the next chapter, we will be learning this javascript code and write more javascript code.
 
 
-### Refs
+## Refs
 https://www.w3schools.com/jsref/event_onclick.asp

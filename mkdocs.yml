@@ -21,6 +21,8 @@ nav:
         - Intro: bootstrap-css-guide/01-intro.md
         - Play with Bootstrap CSS: bootstrap-css-guide/02-play-with-bootstrap.md
         - Bootstrap Component: bootstrap-css-guide/03-component.md
+        - Combine with Custom CSS: bootstrap-css-guide/04-combine-with-custom-css.md
+        - Check examples page: bootstrap-css-guide/05-check-examples-page.md
     - Javascript:
         - Intro: javascript-guide/intro.md
         - play-with-javascript: javascript-guide/play-with-javascript.md
@@ -30,14 +32,17 @@ nav:
         - Repalce javascript: jquery-guide/play-with-jquery.md
     - Bootstrap JS:
         - Intro: bootstrap-js-guide/01-intro.md
+        - Manual JS: bootstrap-js-guide/02-manual-js.md
     - Combine all front end:
         - Intro: combine-front-end-guide/intro.md
         - Tutorial: combine-front-end-guide/tutorial.md
-        - jquery-back-to-top: combine-front-end-guide/jquery-back-to-top.md
+        - jQuery-back-to-top: combine-front-end-guide/jquery-back-to-top.md
+        - deploy: combine-front-end-guide/deploy.md
     - Recap Front End: recap-frontend.md
     - Coffee Break 1: coffee-break1.md
     - Git:
         - Intro: git-guide/intro.md
+        - Benefit of Git: git-guide/benefit.md
     - Rails:
         - Intro: rails-guide/intro.md
 markdown_extensions:

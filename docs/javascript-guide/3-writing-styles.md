@@ -1,19 +1,24 @@
+!!! abstract "Chapter Goals"
+    - Learn 3 writings style of javascript
 
-https://www.w3schools.com/jsref/event_onclick.asp
+In this chapter, we'll be learning the different writings style of javascript.
 
-## `object.onclick = function(){myScript};`
-```html
+This is the same things we did in CSS chapter.
+
+## 1. `object.onclick = function(){myScript};`
+
+This is what we did in the last chapter.
+
+```js
 document.getElementById('alert').onclick = function () {
   // you can get used to and remember method like this
   window.alert('Alert!!!!!!!!!!');     
 }
 ```
 
-## `<element onclick="...">`
-https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers
-
+## 2. `<element onclick="...">`
 1. comment out existing code.
-```html
+```js
 // another example
 // document.getElementById('alert').onclick = function () {
 //   // you can get used to and remember method like this
@@ -22,20 +27,20 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers
 ```
 
 2. add `onclick`
-```html
+```js
 <div id="alert" onclick="window.alert('Alert!!!!!!!!!!');">Alert Click!</div>
 ```
 
 Check it also works.
 
-## `object.addEventListener("click", myScript);`
+## 3. `object.addEventListener("click", myScript);`
 1. delete `onclick="..."`
-```html
+```js
 <div id="alert">Alert Click!</div>
 ```
 
 2. add `object.addEventListener("click", myScript);`
-```html hl_lines="7 8 9 10 11"
+```js hl_lines="7 8 9 10 11"
 // another example
 // document.getElementById('alert').onclick = function () {
 //   // you can get used to and remember method like this
@@ -82,18 +87,6 @@ function clickAlert() {
   window.alert('Alert!!!!!!!!!!');
 }
 
-// getElementsByClassName exmaple
-// Notice that this is plural
-let testElements = document.getElementsByClassName('test');
-
-testElements[0].onclick = function () {
-  alert('Hello test 0');
-}
-
-testElements[1].onclick = function () {
-  alert('Hello test 1');
-}
-
 // example of onmouseover
 document.getElementById('hover-me').onmouseover = function () {
   console.log('Hover!!!!!!!!!!');     
@@ -101,7 +94,7 @@ document.getElementById('hover-me').onmouseover = function () {
 ```
 
 `test4.html`
-```html
+```html hl_lines="25"
 <!doctype html>
 <html lang="en">
   <head>
@@ -120,9 +113,6 @@ document.getElementById('hover-me').onmouseover = function () {
     <div id="demo">Click here</div>
     <div id="alert">Alert Click!</div>
 
-    <div class="test">I'm test 0</div>
-    <div class="test">I'm test 1</div>
-
     <div id="hover-me">Hover me!</div>
 
     <!-- Optional JavaScript -->
@@ -135,3 +125,6 @@ document.getElementById('hover-me').onmouseover = function () {
 ```
 
 You see it also works.
+
+## Refs
+https://www.w3schools.com/jsref/event_onclick.asp

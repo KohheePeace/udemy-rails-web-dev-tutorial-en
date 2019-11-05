@@ -14,7 +14,7 @@ We already saw this writing style.
 
 ### 2. Inline Style
 `test.html`
-```html
+```html hl_lines="9 12"
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,11 +76,15 @@ Edit `test.html`
 Current folder structure looks like this
 ![External Css Folder Structure](../img/css-guide/external-css-folder.png)
 
+!!! info
+    You see that all 1, 2, 3 output is same.
 
-You can see that all 1, 2, 3 output is same.
 
-In the next chapter, we will learn how to use `class` and `id` as an css target.
+In the next chapter, we will learn how to use **class** and **id** as an css target.
 
-#### you can check the pros and cons of each styling way.
+
+## Refs
+you can check the pros and cons of each styling way.
+https://www.w3schools.com/css/css_howto.asp
 https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css
 https://www.inmotionhosting.com/support/email/outlook/using-css/linking-your-css-to-your-website

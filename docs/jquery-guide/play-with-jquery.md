@@ -1,9 +1,14 @@
-We learned in last chapter that jQuery is easy writing alternative of javascirpt.
+!!! abstract "Chapter Goals"
+    - Replace javascript with jQuery
 
-So, let's replace existing code by jQuery.
+We learned in last chapter that jQuery is easy writing alternative of javascript.
 
+So, let's replace existing code with jQuery.
 
-`test4.html`
+##  Replace `onclick`, `innerHTML`, `style`
+
+The most important things is always googling.
+
 ![jquery-replace-onclick-search](../img/jquery-guide/jquery-replace-onclick-search.gif)
 
 Replace click
@@ -12,11 +17,11 @@ https://api.jquery.com/click/
 Replace innerHTML
 https://api.jquery.com/html/
 
-Repalce style
+Replace style
 https://api.jquery.com/css/
 
-##  Replace innerHTMl
-```html
+`test4.html`
+```js
 // Get Target element
 let demoElement = document.getElementById('demo');
 
@@ -29,15 +34,17 @@ demoElement.onclick = function () {
 ```
 becomes
 
-```html
+```js
 $("#demo").click(function() {
   $("#demo").html("Help me");
   $("#demo").css({ color: "red" });
 });
 ```
 
-## Replace alert
-```html
+Check it works as before...
+
+## Replace `alert`
+```js
 // another example
 // document.getElementById('alert').onclick = function () {
 //   // you can get used to and remember method like this
@@ -53,38 +60,32 @@ function clickAlert() {
 
 becomes
 
-```html
+```js
 $("#alert").click(function() {
   window.alert('Alert!!!!!!!!!!');
 })
 ```
 
-## Repalce getElementsByClassName
+Check it works as before...
 
-https://api.jquery.com/class-selector/
+## Repalce `onmouseover`
+Googling **"jQuery onmouseover equivalent"**
 
-```html
-// getElementsByClassName exmaple
-// Notice that this is plural
-let testElements = document.getElementsByClassName('test');
+https://api.jquery.com/mouseover/
 
-testElements[0].onclick = function () {
-  alert('Hello test 0');
-}
-
-testElements[1].onclick = function () {
-  alert('Hello test 1');
+```js
+// example of onmouseover
+document.getElementById('hover-me').onmouseover = function () {
+  console.log('Hover!!!!!!!!!!');     
 }
 ```
 
 becomes
 
-```html
-$(".test")[0].click(function () {
-  alert('Hello test 0');
-});
-
-$(".test")[1].click(function () {
-  alert('Hello test 0');
-});
+```js
+$("#hover-me").mouseover(function() {
+  console.log('Hover!!!!!!!!!!');
+})
 ```
+
+Check it works as before...

@@ -1,10 +1,13 @@
+!!! abstract "Chapter Goals"
+    - Get used to Bootstrap CSS
+
 In the last chapter, we saw that Bootstrap is a huge external CSS file.
 
-It means if you add class to html, the style applied to HTML.
+**It means if you add class to html, the style applied to that HTML.**
 
 Let's check it.
 
-make `test3.html`
+Make `test3.html`
 
 Copy and paste bootstrap starter template.
 
@@ -45,21 +48,21 @@ Let's check current output.
 
 So, let's add class to `test3.html`.
 
-## Click `Component` link
+First, please go to **Component** page
+
 ![click-component-link](../img/bootstrap-css-guide/click-component-link.gif)
 
-## Copy example html
 In Bootstrap site, they show
 
 ```
-1. the output result
-2. the HTML and class that generates the output result
+1. Output of the HTML
+2. HTML and class that generates the output result
 ```
 
 ![copy-alert-class](../img/bootstrap-css-guide/copy-alert-class.gif)
 
 
-Add this `alert alert-primary` class to `<h1>` tag.
+Copy `alert alert-primary` class and add this to `<h1>` tag.
 `test3.html`
 ```html hl_lines="14"
 <!doctype html>
@@ -86,18 +89,8 @@ Add this `alert alert-primary` class to `<h1>` tag.
 </html>
 ```
 
-## Output after paste alert class
+Check output...
+
 ![output-after-alert-class.png](../img/bootstrap-css-guide/output-after-alert-class.png)
 
-
-!!! summery
-    1. Bootstrap is just a external css file.
-    2. They show the output with HTML and class that generates the output in their site.
-    3. You can obtain the same output by copying it
-
-
 In the next chapter, let's see another example.
-
-### Ref
-if you are curious about role tag...
- https://stackoverflow.com/questions/10403138/what-is-the-purpose-of-the-role-attribute-in-html

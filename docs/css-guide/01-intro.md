@@ -2,28 +2,40 @@
     - Understand what is CSS
     - Try CSS
     - Learn CSS syntax
-    - Learn 3 writing styles of CSS
 
 ## What is CSS ?
+
+From wikipedia...
 > Cascading Style Sheets (CSS) is ==a style sheet language== used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
 
 https://en.wikipedia.org/wiki/Cascading_Style_Sheets
 
 
-!!! summery
+!!! info
     **CSS is a language for styling**
 
 That's it and let's try it.
 
-### Let's try it!
+## Let's try CSS!
+
+we will copy the below example to add CSS.
+
+![css-intro-copy-style-tag](../img/css-guide/css-intro-copy-style-tag.png)
+
+https://www.w3schools.com/tags/tag_style.asp
 
 `test.html`
-```html hl_lines="20 21 22 23"
+```html hl_lines="7 8 9 10"
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Title of the document</title>
+
+  <style>
+    h1 { color: white; background: navy; }
+    ul { background: #FFFF33; }
+  </style>
 </head>
 
 <body>
@@ -38,14 +50,10 @@ That's it and let's try it.
 </body>
 
 </html>
-<style>
-  h1 { color: white; background: navy; }
-  ul { background: #FFFF33; }
-</style>
 ```
 ![First style tag](../img/css-guide/first-style-tag.png)
 
-You see that ==CSS is a language for styling==.
+You see ==**CSS is a language for styling**==.
 
 ## Check the CSS syntax
 

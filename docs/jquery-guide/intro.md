@@ -1,15 +1,23 @@
-# jQuery Intro
-ここで、javascriptをjQueryで書き換える。メリットを示す。
-- 短縮してかける。
-- 直感的。
+!!! abstract "Chapter Goals"
+    - Understand what is jQuery
 
+
+From wikipedia...
 > jQuery's syntax is ==**designed to make it easier**== to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.
 
 https://en.wikipedia.org/wiki/JQuery
 
-![you-might-not-need-jquery](../img/jquery-guide/you-might-not-need-jquery.gif)
-http://youmightnotneedjquery.com/
-https://arp242.net/jquery.html
+And also, let's check the below link.
 
-!!! summery
-    jQuery is easy writing version of javascript.
+This is a document intended to show how to replace jQuery, but it also suggests the merit of jQuery.
+
+http://youmightnotneedjquery.com/
+
+![you-might-not-need-jquery](../img/jquery-guide/you-might-not-need-jquery.gif)
+
+Do you find understand the merit of jQuery ?
+
+It is ==**easy to write**== compared to pure javascript.
+
+## Refs
+https://arp242.net/jquery.html

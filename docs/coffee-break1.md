@@ -11,10 +11,11 @@ It is ==**enough**== to make an MVP.
 ## What do you think about React.js or Vue.js etc...?
 => You ==**should**== learn react.js or vue.js ==to become an web developer==.
 
-But the goal of this course is to make an MVP.
+==**But the goal of this course is to make an MVP.**==
 
-Then you should hire better web developers to user your MVP.
+If your MVP get attention after release, then hire professional coder if needed (It is easy for professional coder to replace it because they of course know jQuery).
 
-## Links
-https://2018.stateofjs.com/front-end-frameworks/other-libraries/
-https://dev.to/bholmesdev/why-sveltejs-may-be-the-best-framework-for-new-web-devs-205i
+## Refs
+https://arp242.net/jquery.html
+
+https://news.ycombinator.com/item?id=20021289
