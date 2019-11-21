@@ -43,8 +43,23 @@ nav:
     - Git:
         - Intro: git-guide/intro.md
         - Benefit of Git: git-guide/benefit.md
-    - Rails:
-        - Intro: rails-guide/intro.md
+    - Rails Basics:
+        - Chapter Intro: rails-guide-basics/chapter-intro.md
+        - Chapter01 Setup application: rails-guide-basics/chapter01.md
+        - Chapter02: rails-guide-basics/chapter02.md
+        - Chapter03: rails-guide-basics/chapter03.md
+        - Chapter04: rails-guide-basics/chapter04.md
+        - Chapter05: rails-guide-basics/chapter05.md
+        - Chapter06: rails-guide-basics/chapter06.md
+        - Chapter07: rails-guide-basics/chapter07.md
+        - Chapter08: rails-guide-basics/chapter08.md
+        - Chapter09: rails-guide-basics/chapter09.md
+        - Chapter10: rails-guide-basics/chapter10.md
+        - Chapter11: rails-guide-basics/chapter11.md
+        - Chapter12: rails-guide-basics/chapter12.md
+        - Chapter13: rails-guide-basics/chapter13.md
+        - Chapter14: rails-guide-basics/chapter14.md
+        - Chapter15: rails-guide-basics/chapter15.md
 markdown_extensions:
   - pymdownx.arithmatex
   - pymdownx.betterem:
