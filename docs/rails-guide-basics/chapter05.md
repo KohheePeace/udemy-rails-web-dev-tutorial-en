@@ -11,7 +11,7 @@ We are in the middle of learning **CRUD**.
 ## Step1
 https://guides.rubyonrails.org/getting_started.html#the-first-form
 
-Let's first copy and paste code and check how it works
+Let's first copy and paste code of official docs and check how it works.
 
 `app/views/articles/new.html.erb`
 ```erb
@@ -44,7 +44,7 @@ We've learned **.html** but we've not learned **.html.erb**...
 ![what-is-erb](../img/rails-guide-basics/what-is-erb.png)
 https://guides.rubyonrails.org/getting_started.html#the-first-form
 
-In `app/views/articles/new.html.erb`, highlighted lines are ruby code.
+In `app/views/articles/new.html.erb`, lines highlighted are ruby code.
 ```erb hl_lines="2 4 5 9 10 14 16"
 <h1>New Article</h1>
 <%= form_with scope: :article, local: true do |form| %>
@@ -64,7 +64,7 @@ In `app/views/articles/new.html.erb`, highlighted lines are ruby code.
 <% end %>
 ```
 
-!!! summery
+!!! tip
     You can **use ruby code** in **.html.erb**
 
 

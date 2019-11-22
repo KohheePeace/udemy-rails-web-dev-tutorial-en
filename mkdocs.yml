@@ -59,7 +59,6 @@ nav:
         - Chapter12: rails-guide-basics/chapter12.md
         - Chapter13: rails-guide-basics/chapter13.md
         - Chapter14: rails-guide-basics/chapter14.md
-        - Chapter15: rails-guide-basics/chapter15.md
 markdown_extensions:
   - pymdownx.arithmatex
   - pymdownx.betterem:

@@ -1,8 +1,8 @@
 !!! abstract "Chapter Goal"
-    - Check best practice routes provided by rails
+    - Check best practice of routes provided by rails
 
-## Corresponding part of official guide
-https://guides.rubyonrails.org/getting_started.html#getting-up-and-running
+
+Ref: https://guides.rubyonrails.org/getting_started.html#getting-up-and-running
 
 
 In official Rails guide they introduce
@@ -15,7 +15,9 @@ This is a **method** to ==create best practice routes for **CRUD**==.
 
 Let's add this and check it.
 
-Before adding `resources :articles`, let's check current routes.
+## Check routes of **before**
+
+Before adding `resources :articles`, let's check current routes as you can see the difference of before and after.
 
 `terminal`
 ```bash
@@ -51,6 +53,8 @@ rails_conductor_inbound_email_reroute POST   /rails/conductor/action_mailbox/:in
             update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
                  rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
 ```
+
+## Check routes of **after**
 
 Okay, so add
 
@@ -111,7 +115,7 @@ rails_conductor_inbound_email_reroute POST   /rails/conductor/action_mailbox/:in
                  rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
 ```
 
-==You see rails automatically generates **routing for CRUD**.==
+==You see rails automatically generates **routings for CRUD**.==
 
 This is useful after you understand get used to rails, but for beginners it ia a little bit difficult.
 

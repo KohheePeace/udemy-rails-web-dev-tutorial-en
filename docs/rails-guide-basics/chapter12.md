@@ -43,12 +43,8 @@ class ArticlesController < ApplicationController
   ...
   def update
     @article = Article.find(params[:id])
- 
-    if @article.update(article_params)
-      redirect_to @article
-    else
-      render 'edit'
-    end
+    @article.update(article_params)
+    redirect_to @article
   end
    
   private
@@ -64,12 +60,8 @@ You don't need views because...
 ```ruby
 def update
   @article = Article.find(params[:id])
-
-  if @article.update(article_params)
-    redirect_to @article # if update success => redirect_to show page.
-  else
-    render 'edit' # if update failed => redirect_to edit page.
-  end
+  @article.update(article_params)
+  redirect_to @article # redirect_to show page `app/views/articles/show.html.erb`
 end
 ```
 

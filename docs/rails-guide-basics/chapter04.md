@@ -1,6 +1,8 @@
 !!! abstract "Chapter Goal"
     - Check best practice routes provided by rails
 
+Ref: https://guides.rubyonrails.org/getting_started.html#getting-up-and-running
+
 We are in the middle of learning **CRUD**.
 
 * [ ] ==C: Create==
@@ -9,9 +11,6 @@ We are in the middle of learning **CRUD**.
 * [ ] D: Delete
 
 ![rails-flow-diagram.png](../img/rails-guide-basics/rails-flow-diagram.png)
-
-## Corresponding part of official guide
-https://guides.rubyonrails.org/getting_started.html#getting-up-and-running
 
 ## Step1
 `routes.rb`
@@ -31,26 +30,23 @@ end
 This means...
 
 !!! info
-    1. visit http://localhost:3000/articles/new
-    2. call articles controller's new action
+    1. If user visit http://localhost:3000/articles/new
+    2. Call articles controller's new action
 
 
 ## Step2 Controller
 Make `app/controllers/articles_controller.rb`
-
-`app/controllers/articles_controller.rb`
-class name corresponds to filename
-`articles_controller.rb` -> `ArticlesController`
 ```ruby
 class ArticlesController < ApplicationController
   def new
   end
 end
 ```
+*Class name corresponds to filename
+`articles_controller.rb` => `ArticlesController`
 
 ## Step3 Views
 Make `app/views/articles` folder (*plural) and `app/views/articles/new.html.erb`
-`app/views/articles/new.html.erb`
 ```erb
 <h1>New Article</h1>
 ```

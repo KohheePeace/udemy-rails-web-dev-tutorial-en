@@ -15,8 +15,6 @@ Let's check what happens when you submit form.
 !!! info
     Please build a habit to **read Error Message**.
 
-Error message is...
-
 ## Check terminal log when you submit form
 ![terminal-log-submit-form-error.gif](../img/rails-guide-basics/terminal-log-submit-form-error.gif)
 

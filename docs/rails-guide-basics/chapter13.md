@@ -1,5 +1,5 @@
 !!! abstract "Chapter Goal"
-    - U: Update => Update article.
+    - D: Delete => Delete article.
 
 
 We are in the middle of learning **CRUD**.

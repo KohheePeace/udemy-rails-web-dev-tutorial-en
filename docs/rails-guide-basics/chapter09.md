@@ -1,5 +1,5 @@
 !!! abstract "Chapter Goal"
-    - fefe
+    - R: READ => Read **single** article data
 
 Ref: https://guides.rubyonrails.org/getting_started.html#showing-articles
 
@@ -32,7 +32,7 @@ Rails.application.routes.draw do
 end
 ```
 
-==If url matches== like...
+==If url matches== something like...
 
 - '/articles/1'
 - '/articles/abc'
@@ -52,7 +52,8 @@ end
 ```
 
 ## Step3 Views
-Create a new file `app/views/articles/show.html.erb`
+Create a new file 
+
 `app/views/articles/show.html.erb`
 ```erb
 <h1>Hello This is Show page of Article!</h1>
@@ -68,7 +69,7 @@ Visit:
 ![check-rails-show-page.png](../img/rails-guide-basics/check-rails-show-page.png)
 
 ## Step5 Show Article Data in this page
-![rails-flow-diagram.png](../img/rails-guide-basics/rails-flow-diagram.png)
+![rails-flow-diagram-read.png](../img/rails-guide-basics/rails-flow-diagram-read.png)
 
 1. Fetch data from database by using model.
 2. Pass that data to views from controller.
@@ -107,5 +108,7 @@ end
 visit: http://localhost:3000/articles/1
 ![rails-show-find.png](../img/rails-guide-basics/rails-show-find.png)
 
+
 visit: http://localhost:3000/articles/2
 ![show-article-2.png](../img/rails-guide-basics/show-article-2.png)
+=> Error happened because there is no article with id=2 in database.
