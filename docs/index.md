@@ -1,5 +1,5 @@
 # Introduction
-このドキュメントはそもそもつまらないで録画できるようにするスクリプト。
+このドキュメントはそもそも詰まらないで録画できるようにするスクリプト。
 
 ## Tech stack
 Why choose **Ruby on rails**

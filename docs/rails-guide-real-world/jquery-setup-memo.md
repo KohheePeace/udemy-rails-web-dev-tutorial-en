@@ -1,5 +1,7 @@
 # Memo jQuery
 
+https://github.com/rails/webpacker/blob/master/docs/webpack.md#plugins
+
 ## 7 Reasons NOT to use a Content Delivery Network
 https://www.sitepoint.com/7-reasons-not-to-use-a-cdn/
 

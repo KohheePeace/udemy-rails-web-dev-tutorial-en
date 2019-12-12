@@ -13,6 +13,8 @@ resources :articles
 
 This is a **method** to ==create best practice routes for **CRUD**==.
 
+[As mentioned in part overview, there is a "best" way to do things in rails...](http://localhost:8000/rails-guide-basics/overview/#2-what-is-rails)
+
 Let's add this and check it.
 
 ## Check routes of **before**
@@ -56,11 +58,7 @@ rails_conductor_inbound_email_reroute POST   /rails/conductor/action_mailbox/:in
 
 ## Check routes of **after**
 
-Okay, so add
-
-```
-resources :articles
-```
+Okay, so add resources...
 
 `routes.rb`
 ```ruby hl_lines="5"

@@ -1,5 +1,5 @@
 !!! abstract "Chapter Goal"
-    - R: READ => Read **single** article data
+    - R: READ => Read **single** article data from database
 
 Ref: https://guides.rubyonrails.org/getting_started.html#showing-articles
 
@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   # resources :articles
   get 'articles/new'
   post 'articles', to: 'articles#create'
-  get '/articles/:id', to: 'articles#show'
+  get '/articles/:id', to: 'articles#show', as: 'article'
 
 
   root 'hello#hogehoge'
@@ -61,11 +61,13 @@ Create a new file
 
 
 ## Step4 Check it
-Visit: 
-- http://localhost:3000/articles/1
-- http://localhost:3000/articles/abc
-- http://localhost:3000/articles/2
+Visit...
 
+1. http://localhost:3000/articles/1
+2. http://localhost:3000/articles/abc
+3. http://localhost:3000/articles/2
+
+Every url show this page...
 ![check-rails-show-page.png](../img/rails-guide-basics/check-rails-show-page.png)
 
 ## Step5 Show Article Data in this page
@@ -80,15 +82,12 @@ Visit:
 class ArticlesController < ApplicationController
   ...
   def show
-    # params[:id] is 1, abc, 2 <= '/articles/:id'
-    # when you pass data to the views, you need "@"
+    # To pass data to the views, you need "@"
     @article = Article.find(params[:id])
   end
   ...
 end
 ```
-
-![article-find.gif](../img/rails-guide-basics/article-find.gif)
 
 ### Step5-2 Pass @article to views
 `app/views/articles/show.html.erb`
@@ -106,6 +105,17 @@ end
 
 ### Step5-3 Check it
 visit: http://localhost:3000/articles/1
+
+This code runs in controller...
+```ruby
+def show
+  @article = Article.find(1)
+end
+```
+And, find Article where `id=1` from database.
+![article-find.gif](../img/rails-guide-basics/article-find.gif)
+
+Then, views render
 ![rails-show-find.png](../img/rails-guide-basics/rails-show-find.png)
 
 

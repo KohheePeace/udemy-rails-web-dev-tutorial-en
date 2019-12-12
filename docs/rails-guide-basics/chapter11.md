@@ -19,7 +19,8 @@ Add a routes for edit page.
 get '/articles/:id/edit', to: 'articles#edit', as: 'edit_article'
 ```
 
-This is imitated by...
+This makes same route with
+
 ```
 resources :articles
 ```

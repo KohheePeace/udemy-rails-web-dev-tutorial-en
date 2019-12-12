@@ -11,11 +11,9 @@ We are in the middle of learning **CRUD**.
 ![rails-flow-diagram.png](../img/rails-guide-basics/rails-flow-diagram.png)
 
 
-!!! note
-    - You don't follow each code meaning now
-    - Rather please follow the **flow**
+In this chapter, we will make Article model.
 
-## Rails Model
+## Step1 Make Rails Model
 
 https://guides.rubyonrails.org/getting_started.html#creating-the-article-model
 
@@ -23,6 +21,8 @@ https://guides.rubyonrails.org/getting_started.html#creating-the-article-model
 ```bash
 docker-compose run web rails generate model Article title:string text:text
 ```
+=> We want an Article model, with **a title attribute of type string**, and **a text attribute of type text**.
+
 Output is ...
 
 ```bash hl_lines="2 3"
@@ -40,7 +40,7 @@ Output is ...
 => This is a migration file. The purpose of this file is ==**to tell database what we want to do.**==
 
 
-## Run migration
+## Step2 Run migration
 `db/migrate/20191118103927_create_articles.rb`
 ```ruby hl_lines="3"
 class CreateArticles < ActiveRecord::Migration[6.0]
@@ -55,7 +55,12 @@ class CreateArticles < ActiveRecord::Migration[6.0]
 end
 ```
 
-The meaning of this is to ==**create articles table**==
+The meaning of this is to
+
+**create articles table with title, text and timestamps**
+
+
+## Step3 Check database **Before**
 
 Before running migration file, let's check the database
 
@@ -68,7 +73,10 @@ password: example
 
 ![login-adminer.gif](../img/rails-guide-basics/login-adminer.gif)
 
-To run a migration file...
+
+## Step4 Check database **After**
+
+Run a migration file...
 
 `terminal`
 ```bash
@@ -79,8 +87,8 @@ After running migration file, you see there is articles table created
 
 ![articles-table-created.png](../img/rails-guide-basics/articles-table-created.png)
 
-## Edit `create` action
-We created the database, so let's create the code to save new article data in `def create` action.
+## Step5 Edit **create** action
+We created a database, so let's write a code to save article data to the database in `create` action.
 
 `app/controllers/articles_controller.rb`
 ```ruby
@@ -129,7 +137,7 @@ Visit: http://localhost:3000/articles/new and submit article.
 ```
 
 
-## Check data in database
+## Step6 Check data in database
 ![check-article-data.gif](../img/rails-guide-basics/check-article-data.gif)
 
-In the next lesson, we will be learning how to fetch this newly created Article data!
+In the next lesson, we will be learning how to use this Article data!

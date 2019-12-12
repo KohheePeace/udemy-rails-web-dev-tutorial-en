@@ -152,4 +152,7 @@ Again submit form...
 
 ![yes-submit.png](../img/rails-guide-basics/yes-submit.png)
 
+## Check what parameters sent from URL
+...
+
 In the next lesson, we will be learning how to save this article data to the database! 

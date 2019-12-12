@@ -44,13 +44,12 @@ nav:
         - Intro: git-guide/intro.md
         - Benefit of Git: git-guide/benefit.md
     - Rails Basics:
-        - Chapter Intro: rails-guide-basics/chapter-intro.md
+        - Overview: rails-guide-basics/overview.md
         - Chapter01 Setup application: rails-guide-basics/chapter01.md
         - Chapter02: rails-guide-basics/chapter02.md
         - Chapter03: rails-guide-basics/chapter03.md
         - Chapter04: rails-guide-basics/chapter04.md
         - Chapter05: rails-guide-basics/chapter05.md
-        - Chapter06: rails-guide-basics/chapter06.md
         - Chapter07: rails-guide-basics/chapter07.md
         - Chapter08: rails-guide-basics/chapter08.md
         - Chapter09: rails-guide-basics/chapter09.md
@@ -59,6 +58,41 @@ nav:
         - Chapter12: rails-guide-basics/chapter12.md
         - Chapter13: rails-guide-basics/chapter13.md
         - Chapter14: rails-guide-basics/chapter14.md
+        - memo: rails-guide-basics/memo.md
+    - Rails Real World:
+        - Overview: rails-guide-real-world/overview.md
+        - Chapter01 Setup application: rails-guide-real-world/chapter01.md
+        - Chapter02: rails-guide-real-world/chapter02.md
+        - Chapter03: rails-guide-real-world/chapter03.md
+        - Chapter04 - Change Navbar: rails-guide-real-world/chapter04.md
+        - Chapter05 - Google Login: rails-guide-real-world/chapter05.md
+        - Install Bootstrap: rails-guide-real-world/install-bootstrap.md
+        - Jquery setup: rails-guide-real-world/jquery-setup-memo.md
+        - Devise Memo: rails-guide-real-world/devise-memo.md
+        - Css Convention: rails-guide-real-world/css-convention.md
+        - Arrangement: rails-guide-real-world/arrangement.md
+        - Scaffold POst: rails-guide-real-world/scaffold-post.md
+        - Action Text: rails-guide-real-world/action-text.md
+        - Profile Page: rails-guide-real-world/profile-page.md
+        - friendly-id: rails-guide-real-world/friendly-id.md
+        - username: rails-guide-real-world/username.md
+        - active-storage: rails-guide-real-world/active-storage.md
+        - post-thumbnail: rails-guide-real-world/post-thumbnail.md
+        - publish-post: rails-guide-real-world/publish-post.md
+        - pagination.md: rails-guide-real-world/pagination.md
+        - change-email.md: rails-guide-real-world/change-email.md
+        - flash-message.md: rails-guide-real-world/flash-message.md
+        - post-comment.md: rails-guide-real-world/post-comment.md
+        - mailer.md: rails-guide-real-world/mailer.md
+        - stripe-flow-overview.md: rails-guide-real-world/stripe-flow-overview.md
+        - stripe-connect-seller-side.md: rails-guide-real-world/stripe-connect-seller-side.md
+        - add-price-to-post.md: rails-guide-real-world/add-price-to-post.md
+        - stripe-connect-buyer-side-checkout.md: rails-guide-real-world/stripe-connect-buyer-side-checkout.md
+        - stripe-connect-buyer-side-checkout-send-post.md: rails-guide-real-world/stripe-connect-buyer-side-checkout-send-post.md
+        - stripe-checkout-with-connect.md: rails-guide-real-world/stripe-checkout-with-connect.md
+        - post-checkout-refactor.md: rails-guide-real-world/post-checkout-refactor.md
+        - stripe-success-cancel-page.md: rails-guide-real-world/stripe-success-cancel-page.md
+        - create-order-model.md: rails-guide-real-world/create-order-model.md
 markdown_extensions:
   - pymdownx.arithmatex
   - pymdownx.betterem:
@@ -78,3 +112,5 @@ markdown_extensions:
   - pymdownx.tilde
   - codehilite
   - admonition
+extra_css:
+  - 'stylesheets/extra.css'

@@ -1,27 +1,24 @@
-## 1 Overview
 In this part, we will ==learn the basics of Rails==.
 
 We will follow the **official rails "Getting Started" guide** but a little bit different way.
 
 https://guides.rubyonrails.org/getting_started.html
 
-!!! tip
-    1. Please don't obsess over each code meaning
-    2. Rather understand the flow is more important now
+## 1 Goal of this part
 
-## 2 Goal of this part
 !!! success "Goal of this part"
-    1. Understand **CRUD**
+    1. Become able to make **CRUD**
     2. Understand the below diagram
     ![rails-flow-diagram.png](../img/rails-guide-basics/rails-flow-diagram.png)
 
 ## 2 What is Rails?
+I just highlighted important part.
 
 https://guides.rubyonrails.org/getting_started.html#what-is-rails-questionmark
 
-Rails is a web application development framework written in the Ruby programming language. It is designed to ==make programming web applications easier== by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development ==more fun==.
+Rails is a web application development framework written in the Ruby programming language. It is designed to ==**make programming web applications easier**== by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that ==**it makes web application development more fun**==.
 
-Rails is opinionated software. It makes the assumption that ==there is a "best" way to do things, and it's designed to encourage that way== - and in some cases to discourage alternatives. If you learn "The Rails Way" you'll probably discover a tremendous increase in productivity. If you persist in bringing old habits from other languages to your Rails development, and trying to use patterns you learned elsewhere, you may have a less happy experience.
+Rails is opinionated software. It makes the assumption that ==**there is a "best" way to do things, and it's designed to encourage that way**== - and in some cases to discourage alternatives. If you learn "The Rails Way" you'll probably discover a tremendous increase in productivity. If you persist in bringing old habits from other languages to your Rails development, and trying to use patterns you learned elsewhere, you may have a less happy experience.
 
 The Rails philosophy includes two major guiding principles:
 

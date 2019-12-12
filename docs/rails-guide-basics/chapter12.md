@@ -1,6 +1,7 @@
 !!! abstract "Chapter Goal"
     - U: Update => Update article.
 
+Ref: https://guides.rubyonrails.org/getting_started.html#updating-articles
 
 We are in the middle of learning **CRUD**.
 
@@ -8,8 +9,6 @@ We are in the middle of learning **CRUD**.
 * [x] R: Read
 * [ ] ==U: Update==
 * [ ] D: Delete
-
-Ref: https://guides.rubyonrails.org/getting_started.html#updating-articles
 
 In this chapter, we will fix last chapter error.
 
