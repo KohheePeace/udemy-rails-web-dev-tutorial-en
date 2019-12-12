@@ -1,0 +1,1841 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>active-storage - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#setup-rails-side" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              My Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                active-storage
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="0 - Introduction" class="md-nav__link">
+      0 - Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../editor-install/" title="1 - Install Editor" class="md-nav__link">
+      1 - Install Editor
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      HTML
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        HTML
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../html-guide/01-html-intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../html-guide/02-understand-basic-html/" title="Understand HTML" class="md-nav__link">
+      Understand HTML
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../html-guide/03-play-with-html/" title="Play with HTML" class="md-nav__link">
+      Play with HTML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      CSS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        CSS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../css-guide/01-intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../css-guide/there-are-3-writing-styles/" title="there-are-3-writing-styles" class="md-nav__link">
+      there-are-3-writing-styles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../css-guide/02-class-and-id/" title="Class and ID" class="md-nav__link">
+      Class and ID
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../css-guide/03-google-dev-tools/" title="Google Dev Tools" class="md-nav__link">
+      Google Dev Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../css-guide/04-complex-css/" title="Complex CSS" class="md-nav__link">
+      Complex CSS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Bootstrap CSS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Bootstrap CSS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bootstrap-css-guide/01-intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bootstrap-css-guide/02-play-with-bootstrap/" title="Play with Bootstrap CSS" class="md-nav__link">
+      Play with Bootstrap CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bootstrap-css-guide/03-component/" title="Bootstrap Component" class="md-nav__link">
+      Bootstrap Component
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bootstrap-css-guide/04-combine-with-custom-css/" title="Combine with Custom CSS" class="md-nav__link">
+      Combine with Custom CSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bootstrap-css-guide/05-check-examples-page/" title="Check examples page" class="md-nav__link">
+      Check examples page
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Javascript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Javascript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../javascript-guide/intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../javascript-guide/play-with-javascript/" title="play-with-javascript" class="md-nav__link">
+      play-with-javascript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../javascript-guide/3-writing-styles/" title="3-writing-styles" class="md-nav__link">
+      3-writing-styles
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      jQuery
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        jQuery
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../jquery-guide/intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../jquery-guide/play-with-jquery/" title="Repalce javascript" class="md-nav__link">
+      Repalce javascript
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Bootstrap JS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Bootstrap JS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bootstrap-js-guide/01-intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bootstrap-js-guide/02-manual-js/" title="Manual JS" class="md-nav__link">
+      Manual JS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Combine all front end
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Combine all front end
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../combine-front-end-guide/intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../combine-front-end-guide/tutorial/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../combine-front-end-guide/jquery-back-to-top/" title="jQuery-back-to-top" class="md-nav__link">
+      jQuery-back-to-top
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../combine-front-end-guide/deploy/" title="deploy" class="md-nav__link">
+      deploy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../recap-frontend/" title="Recap Front End" class="md-nav__link">
+      Recap Front End
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../coffee-break1/" title="Coffee Break 1" class="md-nav__link">
+      Coffee Break 1
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Git
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Git
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git-guide/intro/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git-guide/benefit/" title="Benefit of Git" class="md-nav__link">
+      Benefit of Git
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Rails Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        Rails Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter01/" title="Chapter01 Setup application" class="md-nav__link">
+      Chapter01 Setup application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter02/" title="Chapter02" class="md-nav__link">
+      Chapter02
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter03/" title="Chapter03" class="md-nav__link">
+      Chapter03
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter04/" title="Chapter04" class="md-nav__link">
+      Chapter04
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter05/" title="Chapter05" class="md-nav__link">
+      Chapter05
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter07/" title="Chapter07" class="md-nav__link">
+      Chapter07
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter08/" title="Chapter08" class="md-nav__link">
+      Chapter08
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter09/" title="Chapter09" class="md-nav__link">
+      Chapter09
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter10/" title="Chapter10" class="md-nav__link">
+      Chapter10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter11/" title="Chapter11" class="md-nav__link">
+      Chapter11
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter12/" title="Chapter12" class="md-nav__link">
+      Chapter12
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter13/" title="Chapter13" class="md-nav__link">
+      Chapter13
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/chapter14/" title="Chapter14" class="md-nav__link">
+      Chapter14
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rails-guide-basics/memo/" title="memo" class="md-nav__link">
+      memo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" checked>
+    
+    <label class="md-nav__link" for="nav-14">
+      Rails Real World
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Rails Real World
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../chapter01/" title="Chapter01 Setup application" class="md-nav__link">
+      Chapter01 Setup application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../chapter02/" title="Chapter02" class="md-nav__link">
+      Chapter02
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../chapter03/" title="Chapter03" class="md-nav__link">
+      Chapter03
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../chapter04/" title="Chapter04 - Change Navbar" class="md-nav__link">
+      Chapter04 - Change Navbar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../chapter05/" title="Chapter05 - Google Login" class="md-nav__link">
+      Chapter05 - Google Login
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../install-bootstrap/" title="Install Bootstrap" class="md-nav__link">
+      Install Bootstrap
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../jquery-setup-memo/" title="Jquery setup" class="md-nav__link">
+      Jquery setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../devise-memo/" title="Devise Memo" class="md-nav__link">
+      Devise Memo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../css-convention/" title="Css Convention" class="md-nav__link">
+      Css Convention
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arrangement/" title="Arrangement" class="md-nav__link">
+      Arrangement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scaffold-post/" title="Scaffold POst" class="md-nav__link">
+      Scaffold POst
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../action-text/" title="Action Text" class="md-nav__link">
+      Action Text
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../profile-page/" title="Profile Page" class="md-nav__link">
+      Profile Page
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../friendly-id/" title="friendly-id" class="md-nav__link">
+      friendly-id
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../username/" title="username" class="md-nav__link">
+      username
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        active-storage
+      </label>
+    
+    <a href="./" title="active-storage" class="md-nav__link md-nav__link--active">
+      active-storage
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-rails-side" class="md-nav__link">
+    Setup Rails side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-google-cloud-side" class="md-nav__link">
+    Setup Google cloud side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-storageyml" class="md-nav__link">
+    Edit storage.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-credentials" class="md-nav__link">
+    Edit Credentials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-settings" class="md-nav__link">
+    Environment Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-gcs-json-api" class="md-nav__link">
+    Enable gcs json-api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-model" class="md-nav__link">
+    Edit model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-form" class="md-nav__link">
+    Edit form
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-show-page-and-navbar" class="md-nav__link">
+    Edit show page and Navbar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller" class="md-nav__link">
+    Controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-preview" class="md-nav__link">
+    Image Preview...
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../post-thumbnail/" title="post-thumbnail" class="md-nav__link">
+      post-thumbnail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../publish-post/" title="publish-post" class="md-nav__link">
+      publish-post
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pagination/" title="pagination.md" class="md-nav__link">
+      pagination.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../change-email/" title="change-email.md" class="md-nav__link">
+      change-email.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../flash-message/" title="flash-message.md" class="md-nav__link">
+      flash-message.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../post-comment/" title="post-comment.md" class="md-nav__link">
+      post-comment.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mailer/" title="mailer.md" class="md-nav__link">
+      mailer.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stripe-flow-overview/" title="stripe-flow-overview.md" class="md-nav__link">
+      stripe-flow-overview.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stripe-connect-seller-side/" title="stripe-connect-seller-side.md" class="md-nav__link">
+      stripe-connect-seller-side.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../add-price-to-post/" title="add-price-to-post.md" class="md-nav__link">
+      add-price-to-post.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stripe-connect-buyer-side-checkout/" title="stripe-connect-buyer-side-checkout.md" class="md-nav__link">
+      stripe-connect-buyer-side-checkout.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stripe-connect-buyer-side-checkout-send-post/" title="stripe-connect-buyer-side-checkout-send-post.md" class="md-nav__link">
+      stripe-connect-buyer-side-checkout-send-post.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stripe-checkout-with-connect/" title="stripe-checkout-with-connect.md" class="md-nav__link">
+      stripe-checkout-with-connect.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../post-checkout-refactor/" title="post-checkout-refactor.md" class="md-nav__link">
+      post-checkout-refactor.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stripe-success-cancel-page/" title="stripe-success-cancel-page.md" class="md-nav__link">
+      stripe-success-cancel-page.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../create-order-model/" title="create-order-model.md" class="md-nav__link">
+      create-order-model.md
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-rails-side" class="md-nav__link">
+    Setup Rails side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-google-cloud-side" class="md-nav__link">
+    Setup Google cloud side
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-storageyml" class="md-nav__link">
+    Edit storage.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-credentials" class="md-nav__link">
+    Edit Credentials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-settings" class="md-nav__link">
+    Environment Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-gcs-json-api" class="md-nav__link">
+    Enable gcs json-api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-model" class="md-nav__link">
+    Edit model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-form" class="md-nav__link">
+    Edit form
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-show-page-and-navbar" class="md-nav__link">
+    Edit show page and Navbar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller" class="md-nav__link">
+    Controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-preview" class="md-nav__link">
+    Image Preview...
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>active-storage</h1>
+                
+                <div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>GoogleのCORSの設定が面倒だったので、AWSに変更する。</p>
+</div>
+<p><a href="https://guides.rubyonrails.org/active_storage_overview.html">https://guides.rubyonrails.org/active_storage_overview.html</a></p>
+<h2 id="setup-rails-side">Setup Rails side</h2>
+<p><code class="codehilite"><span class="n">terminal</span></code>
+<div class="codehilite"><pre><span></span>rails active_storage:install
+Copied migration 20191203231057_create_active_storage_tables.active_storage.rb from active_storage
+</pre></div></p>
+<p><code class="codehilite"><span class="mi">20191203231057</span><span class="n">_create_active_storage_tables</span><span class="p">.</span><span class="n">active_storage</span><span class="p">.</span><span class="n">rb</span></code>
+<div class="codehilite"><pre><span></span><span class="c1"># This migration comes from active_storage (originally 20170806125915)</span>
+<span class="k">class</span> <span class="nc">CreateActiveStorageTables</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">5</span><span class="o">.</span><span class="mi">2</span><span class="o">]</span>
+  <span class="k">def</span> <span class="nf">change</span>
+    <span class="n">create_table</span> <span class="ss">:active_storage_blobs</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="ss">:key</span><span class="p">,</span>        <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="ss">:filename</span><span class="p">,</span>   <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="ss">:content_type</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">text</span>     <span class="ss">:metadata</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">bigint</span>   <span class="ss">:byte_size</span><span class="p">,</span>  <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">string</span>   <span class="ss">:checksum</span><span class="p">,</span>   <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="ss">:created_at</span><span class="p">,</span> <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+
+      <span class="n">t</span><span class="o">.</span><span class="n">index</span> <span class="o">[</span> <span class="ss">:key</span> <span class="o">]</span><span class="p">,</span> <span class="ss">unique</span><span class="p">:</span> <span class="kp">true</span>
+    <span class="k">end</span>
+
+    <span class="n">create_table</span> <span class="ss">:active_storage_attachments</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">string</span>     <span class="ss">:name</span><span class="p">,</span>     <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">references</span> <span class="ss">:record</span><span class="p">,</span>   <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span><span class="p">,</span> <span class="ss">polymorphic</span><span class="p">:</span> <span class="kp">true</span><span class="p">,</span> <span class="ss">index</span><span class="p">:</span> <span class="kp">false</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">references</span> <span class="ss">:blob</span><span class="p">,</span>     <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+
+      <span class="n">t</span><span class="o">.</span><span class="n">datetime</span> <span class="ss">:created_at</span><span class="p">,</span> <span class="ss">null</span><span class="p">:</span> <span class="kp">false</span>
+
+      <span class="n">t</span><span class="o">.</span><span class="n">index</span> <span class="o">[</span> <span class="ss">:record_type</span><span class="p">,</span> <span class="ss">:record_id</span><span class="p">,</span> <span class="ss">:name</span><span class="p">,</span> <span class="ss">:blob_id</span> <span class="o">]</span><span class="p">,</span> <span class="nb">name</span><span class="p">:</span> <span class="s2">&quot;index_active_storage_attachments_uniqueness&quot;</span><span class="p">,</span> <span class="ss">unique</span><span class="p">:</span> <span class="kp">true</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">foreign_key</span> <span class="ss">:active_storage_blobs</span><span class="p">,</span> <span class="ss">column</span><span class="p">:</span> <span class="ss">:blob_id</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre></div></p>
+<div class="codehilite"><pre><span></span>rails db:migrate
+</pre></div>
+
+<p><code class="codehilite"><span class="n">Gemfile</span></code>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="n">gem</span> <span class="ss">&quot;google-cloud-storage&quot;</span><span class="p">,</span> <span class="ss">&quot;~&gt; 1.11&quot;</span><span class="p">,</span> <span class="n">require</span><span class="p">:</span> <span class="k">false</span>
+</pre></div></p>
+<div class="codehilite"><pre><span></span>bundle
+</pre></div>
+
+<h2 id="setup-google-cloud-side">Setup Google cloud side</h2>
+<p><a href="https://medium.com/@pjbelo/setting-up-rails-5-2-active-storage-using-google-cloud-storage-and-heroku-23df91e830f8">https://medium.com/@pjbelo/setting-up-rails-5-2-active-storage-using-google-cloud-storage-and-heroku-23df91e830f8</a></p>
+<p>Go to console
+<a href="https://console.cloud.google.com/">https://console.cloud.google.com/</a></p>
+<h2 id="edit-storageyml">Edit <code class="codehilite"><span class="k">storage</span><span class="p">.</span><span class="n">yml</span></code></h2>
+<div class="codehilite"><pre><span></span><span class="nt">test</span><span class="p">:</span>
+  <span class="nt">service</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Disk</span>
+  <span class="nt">root</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;%= Rails.root.join(&quot;tmp/storage&quot;) %&gt;</span>
+
+<span class="nt">local</span><span class="p">:</span>
+  <span class="nt">service</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Disk</span>
+  <span class="nt">root</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;%= Rails.root.join(&quot;storage&quot;) %&gt;</span>
+
+<span class="c1"># Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)</span>
+<span class="c1"># amazon:</span>
+<span class="c1">#   service: S3</span>
+<span class="c1">#   access_key_id: &lt;%= Rails.application.credentials.dig(:aws, :access_key_id) %&gt;</span>
+<span class="c1">#   secret_access_key: &lt;%= Rails.application.credentials.dig(:aws, :secret_access_key) %&gt;</span>
+<span class="c1">#   region: us-east-1</span>
+<span class="c1">#   bucket: your_own_bucket</span>
+
+<span class="c1"># Remember not to checkin your GCS keyfile to a repository</span>
+<span class="hll"><span class="nt">google</span><span class="p">:</span>
+</span><span class="hll">  <span class="nt">service</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GCS</span>
+</span><span class="hll">  <span class="nt">project</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Kakuru</span>
+</span><span class="hll">  <span class="nt">credentials</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;%= Rails.application.credentials.gcs_storage.to_json %&gt;</span>
+</span><span class="hll">  <span class="nt">bucket</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">text_bucket_1</span>
+</span>
+<span class="c1"># Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)</span>
+<span class="c1"># microsoft:</span>
+<span class="c1">#   service: AzureStorage</span>
+<span class="c1">#   storage_account_name: your_account_name</span>
+<span class="c1">#   storage_access_key: &lt;%= Rails.application.credentials.dig(:azure_storage, :storage_access_key) %&gt;</span>
+<span class="c1">#   container: your_container_name</span>
+
+<span class="c1"># mirror:</span>
+<span class="c1">#   service: Mirror</span>
+<span class="c1">#   primary: local</span>
+<span class="c1">#   mirrors: [ amazon, google, microsoft ]</span>
+</pre></div>
+
+<h2 id="edit-credentials">Edit Credentials</h2>
+<p><code class="codehilite"><span class="n">termianl</span></code>
+<div class="codehilite"><pre><span></span><span class="nv">EDITOR</span><span class="o">=</span><span class="s2">&quot;code --wait&quot;</span> bin/rails credentials:edit
+</pre></div></p>
+<p>This is a download key of json...
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;service_account&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;project_id&quot;</span><span class="p">:</span> <span class="s2">&quot;fjeioafhewa-190913&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;private_key_id&quot;</span><span class="p">:</span> <span class="s2">&quot;feajohfeoa&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;private_key&quot;</span><span class="p">:</span> <span class="s2">&quot;-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDG1NKHBdKIJQT+\nSo183KHbYJLV1pVZmqMDcO4djTfdqNiPJfxt0+u7GJJ2zXzX7vHZS/bLJvsS6yN5\numH+HYerZXa2k5vofd4IcZn91t/GJRLbrLv3lBNOwMrGvSvd3H1uxBZ9lXST1PaR\n1ggYiOJWG+mfoea/grYq2\neZqaH/L7fOKuIs8B/ItBQR05bMWcfAE1HnmOKzmpqs84Dj4IndnXAoMg4UVN7mPn\nw5Flvgh5LesTr4oCNHpyS4AkfYmw8cMhjqkNBYWqK0tShqp8htATOk0tTAtRG+g+\nEDWu7h5rAgMBAAECggEADgC8CO1Ui+kLhnsqpsIFFiWhgbTYlNRqqZng8yzYY+B5\ny+8RbYywu975patIIQ7/cl3CtkD7CrSLrY1+TD65KM1/BFG197QxmGejwDhLTzGa\nN+Vc4Y1IpNG4FjIJblkSbmQZ72NAsA6eBNxNeqjdQ9I3jfieaofjeaw4XEoJ2cblpwzp02rSGNI\n9zshMjMoeNnoCUum3thg6X38UuczPman++PBwtfkrsyc7jbZluJnqQtwfEEwuf1+\nIRrduxCmu74SOdLqeN00xLf/t5OLtP5MLaaEFbydu8syltB9N+ZChoSCFAcbCFtW\njlTNi2nclcgtWh3SwkwnKXz4CVVOPF1uB/RNGolTdQKBgQD1PvyLXfvTkrb5rjtX\fjeiowafjwa/Ix8UBUxjqNjTPxcfpQ4ptuA8bMsuoAwapbDdBGt\n5mlqbJM/5tNjYskNreXtfJaIq2F/gx2lWtxwsrh7UUwDgbTeKFWkkr0ej9TNnoRV\nQch3WcgcBdieOAaMGwI72qb1XwKBgQDPjM6NetyC+2emOW2AhEfDpBvJLU2yjzVQ\nBofzK5iW2fuXUzjOPz0r3gV+N1sPvJGaGtGda/RfVZupCw62I7hhOIddptzOx+W8\ngcQHrcR+z354YGTagn0Jnzx1wBNR6Rvz8JP1ryV8yCbIkKPpAo/livyTlpWWxUtA\nDNmdC3hGdQKBgQDjhBaIOJ2KLz7+rSuyOOEe4hqChXdWv1CcyKDDmVlIYhn2rdir\ni/d6BQ7NxEQ/tlRG8HPX2AFaaVgKZWCNYweCys1kaADN3/RDc4OuaXnBurSNthbH\ns150Uukgxk/tpOQlgWfKcLNwaeDzDM8ZxRhz2N/zV10Zk0JHsjrFSli/owKBgQCX\nap52UR/23vrrJhJhJCBG9r7eshJxJlE6pMkh+rhDtZv69lgG/9Pc4QkY38GrZWLE\nDrTGKDAMLSR22v5Mmxq0sszu4gFNSkCsme8tuvQTn8UghRKO54vZLTaqoQp3Q52F\nBgqrvq+WrV6+C+fI4nmgeRlzgvR3HlCb1cQc8nU40QKBgD2hTUf1e8/IoDBxBnom\nlLv6tXLE4klczAr1dtksz1PW9OqbFo5wHkecDeEsR/WXnxOuQ+WUeQYTLywIAP+W\ndv5EoeKIQwZAmVoFx/+hHqfr3fK+M5MWMHFl6OrkPLP8N6HrzTCq2L/9t9BZwpKj\nue2l0/Bqv9Zn2RLlErD8Yeqe\n-----END PRIVATE KEY-----\n&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;client_email&quot;</span><span class="p">:</span> <span class="s2">&quot;rails-active-storage-teser@fekoafewajoi-190913.iam.gserviceaccount.com&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;client_id&quot;</span><span class="p">:</span> <span class="s2">&quot;fjewioafe&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;auth_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://accounts.google.com/o/oauth2/auth&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;token_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://oauth2.googleapis.com/token&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;auth_provider_x509_cert_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.googleapis.com/oauth2/v1/certs&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;client_x509_cert_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.googleapis.com/robot/v1/metadata/x509/rails-active-storage-teser%fejaiofwe-190913.iam.gserviceaccount.com&quot;</span>
+<span class="p">}</span>
+</pre></div></p>
+<div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="n">Copy</span> <span class="k">and</span> <span class="n">paste</span> <span class="n">this</span> <span class="k">to</span> <span class="n">vscode</span> <span class="n">editor</span>
+<span class="mi">2</span><span class="p">.</span> <span class="k">Delete</span> <span class="err">{}</span> <span class="k">and</span> <span class="s2">&quot;&quot;</span>
+<span class="mi">3</span><span class="p">.</span> <span class="n">Only</span> <span class="ss">`private_key`</span> <span class="n">needes</span> <span class="kt">double</span> <span class="n">quotes</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">so</span> <span class="k">add</span> <span class="s2">&quot;&quot;</span> <span class="k">to</span> <span class="n">it</span><span class="p">.</span>
+<span class="mi">4</span><span class="p">.</span> <span class="n">Paste</span> <span class="n">this</span> <span class="k">to</span> <span class="n">credentials</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span><span class="nt">google</span><span class="p">:</span>
+  <span class="nt">client_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">506850218952-adm8bestc98siuoegh1u5f5e87df8r9b.apps.googleusercontent.com</span>
+  <span class="nt">client_secret</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">o-7wXKl7EYiW85pZdsg-Cdo6</span>
+<span class="nt">gcs_storage</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">service_account</span>
+  <span class="nt">project_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fjeioafeawp</span>
+  <span class="nt">private_key_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jiojohifenaowifwnao</span>
+  <span class="nt">private_key</span><span class="p">:</span> <span class="s">&quot;-----BEGIN</span><span class="nv"> </span><span class="s">PRIVATE</span><span class="nv"> </span><span class="s">KEY-----</span><span class="err">\</span><span class="s">joij+\nSo183KHbYJLV1pVZmqMDcO4djTfdqNiPJfxt0+u7GJJ2zXzX7vHZS/bLJvsS6yN5\numH+HYerZXa2k5vofd4IcZn91t/GJRLbrLv3lBNOwMrGvSvd3H1uxBZ9lXST1PaR\n1ggYiOJWG+fjeawoif/grYq2\neZqaH/L7fOKuIs8B/ItBQR05bMWcfAE1HnmOKzmpqs84Dj4IndnXAoMg4UVN7mPn\nw5Flvgh5LesTr4oCNHpyS4AkfYmw8cMhjqkNBYWqK0tShqp8htATOk0tTAtRG+g+\nEDWu7h5rAgMBAAECggEADgC8CO1Ui+kLhnsqpsIFFiWhgbTYlNRqqZng8yzYY+B5\ny+8RbYywu975patIIQ7/cl3CtkD7CrSLrY1+TD65KM1/BFG197QxmGejwDhLTzGa\nN+Vc4Y1IpNG4FjIJblkSbmQZ72NAsA6eBNxNeqjdQ9I34XEoJ2cblpwzp02rSGNI\n9zshMjMoeNnoCUum3thg6X38UuczPman++PBwtfkrsyc7jbZluJnqQtwfEEwuf1+\nIRrduxCmu74SOdLqeN00xLf/t5OLtP5MLaaEFbydu8syltB9N+ZChoSCFAcbCFtW\njlTNi2nclcgtWh3SwkwnKXz4CVVOPF1uB/RNGolTdQKBgQD1PvyLXfvTkrb5rjtX\ncaDqUyX2DfHlOS5wZyHmhJhp/Ix8UBUxjqNjTPxcfpQ4ptuA8bMsuoAwapbDdBGt\n5mlqbJM/5tNjYskNreXtfJaIq2F/gx2lWtxwsrh7UUwDgbTeKFWkkr0ej9TNnoRV</span><span class="err">\</span><span class="s">jiofea+2emOW2AhEfDpBvJLU2yjzVQ\nBofzK5iW2fuXUzjOPz0r3gV+N1sPvJGaGtGda/RfVZupCw62I7hhOIddptzOx+W8\ngcQHrcR+z354YGTagn0Jnzx1wBNR6Rvz8JP1ryV8yCbIkKPpAo/livyTlpWWxUtA\nDNmdC3hGdQKBgQDjhBaIOJ2KLz7+rSuyOOEe4hqChXdWv1CcyKDDmVlIYhn2rdir\ni/d6BQ7NxEQ/tlRG8HPX2AFaaVgKZWCNYweCys1kaADN3/RDc4OuaXnBurSNthbH\ns150Uukgxk/tpOQlgWfKcLNwaeDzDM8ZxRhz2N/zV10Zk0JHsjrFSli/owKBgQCX\nap52UR/23vrrJhJhJCBG9r7eshJxJlE6pMkh+rhDtZv69lgG/9Pc4QkY38GrZWLE\nDrTGKDAMLSR22v5Mmxq0sszu4gFNSkCsme8tuvQTn8UghRKO54vZLTaqoQp3Q52F\nBgqrvq+WrV6+C+fI4nmgeRlzgvR3HlCb1cQc8nU40QKBgD2hTUf1e8/IoDBxBnom\nlLv6tXLE4klczAr1dtksz1PW9OqbFo5wHkecDeEsR/WXnxOuQ+WUeQYTLywIAP+W\ndv5EoeKIQwZAmVoFx/+hHqfr3fK+M5MWMHFl6OrkPLP8N6HrzTCq2L/9t9BZwpKj\nue2l0/Bqv9Zn2RLlErD8Yeqe\n-----END</span><span class="nv"> </span><span class="s">PRIVATE</span><span class="nv"> </span><span class="s">KEY-----\n&quot;</span>
+  <span class="nt">client_email</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">rails-active-storage-teser@joijojfeawhoi.iam.gserviceaccount.com</span>
+  <span class="nt">client_id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jiofoiwejfawe</span>
+  <span class="nt">auth_uri</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://accounts.google.com/o/oauth2/auth</span>
+  <span class="nt">token_uri</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://oauth2.googleapis.com/token</span>
+  <span class="nt">auth_provider_x509_cert_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://www.googleapis.com/oauth2/v1/certs</span>
+  <span class="nt">client_x509_cert_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://www.googleapis.com/robot/v1/metadata/x509/rails-active-storage-teser%40fjeioafeawp.iam.gserviceaccount.com</span>
+</pre></div>
+
+<h2 id="environment-settings">Environment Settings</h2>
+<p>Edit below code...</p>
+<p><code class="codehilite"><span class="n">config</span><span class="o">/</span><span class="n">environments</span><span class="o">/</span><span class="n">development</span><span class="p">.</span><span class="n">rb</span></code>
+<div class="codehilite"><pre><span></span>  <span class="o">...</span>
+  <span class="n">config</span><span class="o">.</span><span class="n">active_storage</span><span class="o">.</span><span class="n">service</span> <span class="o">=</span> <span class="ss">:google</span>
+</pre></div></p>
+<p><code class="codehilite"><span class="n">config</span><span class="o">/</span><span class="n">environments</span><span class="o">/</span><span class="n">production</span><span class="p">.</span><span class="n">rb</span></code>
+<div class="codehilite"><pre><span></span>  <span class="n">config</span><span class="o">.</span><span class="n">active_storage</span><span class="o">.</span><span class="n">service</span> <span class="o">=</span> <span class="ss">:google</span>
+</pre></div></p>
+<h2 id="enable-gcs-json-api">Enable gcs json-api</h2>
+<p><img alt="../img/rails-guide-real-world/enable-gcs-json-api.png" src="../../img/rails-guide-real-world/enable-gcs-json-api.png" /></p>
+<h2 id="edit-model">Edit model</h2>
+<p><code class="codehilite"><span class="n">models</span><span class="o">/</span><span class="k">user</span><span class="p">.</span><span class="n">rb</span></code>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">ApplicationRecord</span>
+  <span class="kp">extend</span> <span class="no">FriendlyId</span>
+  <span class="n">friendly_id</span> <span class="ss">:name</span><span class="p">,</span> <span class="ss">use</span><span class="p">:</span> <span class="ss">:slugged</span><span class="p">,</span> <span class="ss">slug_column</span><span class="p">:</span> <span class="ss">:username</span>
+
+  <span class="c1"># Include default devise modules. Others available are:</span>
+  <span class="c1"># :confirmable, :lockable, :timeoutable, :trackable and :omniauthable</span>
+  <span class="n">devise</span> <span class="ss">:omniauthable</span><span class="p">,</span> <span class="ss">omniauth_providers</span><span class="p">:</span> <span class="o">[</span><span class="ss">:google_oauth2</span><span class="o">]</span>
+
+  <span class="n">has_many</span> <span class="ss">:posts</span><span class="p">,</span> <span class="ss">dependent</span><span class="p">:</span> <span class="ss">:destroy</span>
+<span class="hll">  <span class="n">has_one_attached</span> <span class="ss">:avatar</span>
+</span><span class="o">...</span>
+<span class="k">end</span>
+</pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li><code class="codehilite"><span class="n">image</span></code> column for default google image url</li>
+<li><code class="codehilite"><span class="n">avatar</span></code> =&gt; you don't need column but for active storage avatar.</li>
+</ul>
+</div>
+<h2 id="edit-form">Edit form</h2>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;%=</span> <span class="n">form</span><span class="o">.</span><span class="n">file_field</span> <span class="ss">:avatar</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div>
+
+<h2 id="edit-show-page-and-navbar">Edit show page and Navbar</h2>
+<p><code class="codehilite"><span class="nv">app</span><span class="o">/</span><span class="nv">views</span><span class="o">/</span><span class="nv">users</span><span class="o">/</span><span class="k">show</span>.<span class="nv">html</span>.<span class="nv">erb</span></code>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;%</span> <span class="k">if</span> <span class="vi">@user</span><span class="o">.</span><span class="n">avatar</span><span class="o">.</span><span class="n">attached?</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="x">  </span><span class="cp">&lt;%=</span> <span class="n">image_tag</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="vi">@user</span><span class="o">.</span><span class="n">avatar</span><span class="p">),</span> <span class="ss">width</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="ss">class</span><span class="p">:</span> <span class="s2">&quot;navbar-avatar-img&quot;</span><span class="p">)</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="cp">&lt;%</span> <span class="k">else</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="x">  &lt;img src=&quot;</span><span class="cp">&lt;%=</span> <span class="vi">@user</span><span class="o">.</span><span class="n">image</span> <span class="cp">%&gt;</span><span class="x">&quot; alt=&quot;&quot; class=&quot;navbar-avatar-img&quot;&gt;</span>
+<span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div></p>
+<p>and</p>
+<p>Navbar</p>
+<p><code class="codehilite"><span class="n">app</span><span class="o">/</span><span class="n">views</span><span class="o">/</span><span class="n">shared</span><span class="o">/</span><span class="n">_navbar</span><span class="p">.</span><span class="n">html</span><span class="p">.</span><span class="n">erb</span></code>
+<div class="codehilite"><pre><span></span><span class="x">  </span><span class="cp">&lt;%</span> <span class="k">if</span> <span class="n">current_user</span><span class="o">.</span><span class="n">avatar</span><span class="o">.</span><span class="n">attached?</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">image_tag</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="n">current_user</span><span class="o">.</span><span class="n">avatar</span><span class="p">),</span> <span class="ss">width</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="ss">class</span><span class="p">:</span> <span class="s2">&quot;navbar-avatar-img&quot;</span><span class="p">)</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="x">  </span><span class="cp">&lt;%</span> <span class="k">else</span> <span class="cp">%&gt;</span><span class="x"></span>
+<span class="x">    &lt;img src=&quot;</span><span class="cp">&lt;%=</span> <span class="n">current_user</span><span class="o">.</span><span class="n">image</span> <span class="cp">%&gt;</span><span class="x">&quot; alt=&quot;&quot; class=&quot;navbar-avatar-img&quot;&gt;</span>
+<span class="x">  </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
+</pre></div></p>
+<h2 id="controller">Controller</h2>
+<div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">user_params</span>
+<span class="hll">  <span class="n">params</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="ss">:user</span><span class="p">)</span><span class="o">.</span><span class="n">permit</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:avatar</span><span class="p">)</span>
+</span><span class="k">end</span>
+</pre></div>
+
+<h2 id="image-preview">Image Preview...</h2>
+<p><a href="https://apidock.com/rails/ActionView/Helpers/FormHelper/file_field">https://apidock.com/rails/ActionView/Helpers/FormHelper/file_field</a></p>
+<p><a href="https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded">https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../username/" title="username" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                username
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../post-thumbnail/" title="post-thumbnail" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                post-thumbnail
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
